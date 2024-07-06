@@ -17,22 +17,18 @@
   
   p {
     margin: 0;
-    display: inline;
-    padding: 10px;
-    justify-content: space-between;
   }
-
-  /*  */
   
   section {
-    height: 400px;
+    height: 460px;
     background-color: black;
     color: white;
     padding: 24px 72px;
-   
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
-
   
   h1,
   h2 {
@@ -56,23 +52,15 @@
     border-radius: 29px;
     border: 0px;
     padding: 0 24px;
-    
-   }
-.hero {
-    display: flex;
-  align-items: center;         
-  justify-content: center;  
-}
-.hero-text {
-    display: flex;               
-    flex-direction: column;       
-    align-items: center;          
-    text-align: center;  
-}
+  }
   
   main {
     background-color: white;
     padding: 32px 72px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   nav button {
@@ -93,6 +81,8 @@
   
   .card-footer {
     font-size: 14px;
+    display: flex;
+    justify-content: space-between;
   }
   
   .card-footer * {
@@ -102,6 +92,8 @@
   #subnav {
     padding: 32px 72px 0;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
   }
   
   #subnav button {
@@ -116,5 +108,18 @@
     color: black;
     border-radius: 50px;
     padding: 6px 15px;
+  }
+  
+  #destinations,
+  #actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  #trending {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
   
